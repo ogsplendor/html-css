@@ -1,3 +1,6 @@
+body{
+  background-color: black;
+}
 #header {
   background: #fff;
   height: 65px;
@@ -114,19 +117,23 @@ ul {
   letter-spacing: 3px;
 
 }
-::after, ::before {
-    box-sizing: border-box;
-}
+
 .row{
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
-  margin-top: calc(var(--bs-gutter-y) * -1);
-  margin-right: calc(var(--bs-gutter-x)/ -2);
-  margin-left: calc(var(--bs-gutter-x)/ -2);
-  padding: 0 10px;
-  background-color: black;
   color: #fff;
   font-style: inherit;
+  box-sizing: border-box;
+}
+.column {
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
