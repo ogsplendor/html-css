@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  color: white;
 }
 #header {
   background: #fff;
@@ -121,7 +122,6 @@ ul {
 .row{
   display: flex;
   flex-wrap: wrap;
-  color: #fff;
   font-style: inherit;
   box-sizing: border-box;
 }
@@ -136,4 +136,9 @@ ul {
   content: "";
   display: table;
   clear: both;
+}
+.about{
+  background-color: white;
+  color: black;
+  text-align: center;
 }
