@@ -1,7 +1,6 @@
 
 body{
   height: 100%;
-  
   flex-direction: column;
 }
 #header {
@@ -17,6 +16,7 @@ body{
   align-items: center;
   padding: 0 10px;
   position: fixed;
+  z-index: 20;
 }
 *,::after, ::before {
   box-sizing: border-box;
@@ -431,12 +431,8 @@ opacity: 1;
   font-weight: bold;
   font-size: 48px;
   display: block;
-  color: #18d26e;    
-  display: grid;
+  color: #18d26e;
   width: 100%;
-}
-*, ::after, ::before {
-  box-sizing: border-box;
 }
 .text-center p{
   position: relative;
@@ -448,6 +444,7 @@ opacity: 1;
     font-size: 14px;
     color: #111;
 }
+
 .facts-img {
   text-align: center;
   padding-top: 30px;
